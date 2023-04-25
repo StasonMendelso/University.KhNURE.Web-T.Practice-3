@@ -2,8 +2,6 @@ const isNumber = new RegExp("^\\d+$");
 
 function task1() {
     let money = prompt("Введіть початкову суму грошей");
-    console.log(isNumber.test(money));
-    console.log(money < 1000);
     if (!isNumber.test(money) || money < 1000) {
         alertInvalidData();
         return;
